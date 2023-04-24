@@ -11,24 +11,75 @@
             background-image: url("img/1.jpg");
             background-repeat: no-repeat;
             background-size: cover;
+            margin-left: 100px;
+            margin-right: 100px;
+            margin-top: 50px;
         }
         .header{
             color:#FFFFFF;
             
         }
-        span {
-            text-align: right;
+        h1{
+            display: inline;
         }
+        nav{
+            float: right;
+        }
+        a:link{
+            text-decoration: none;
+            color: aliceblue;
+        }
+        .button1{
+            background-color: black; 
+            font-size: 25px;  
+            border-radius: 40px;
+            padding: 10px;
+            border-color: yellow;
+            text-decoration: none;
+            cursor: pointer;
+            
+        }
+        .button1:hover {
+            background-color: yellow;
+            color: aliceblue;
+        }
+        a:active{
+            color: black;
+        }
+        a:visited{
+            color: aliceblue;
+        }
+        
     </style>
 </head>
 <body>
     <header>
         <div class="header">
             <div><i class='fa fa-mobile-phone' style="font-size:20px"></i>&nbsp;
-            + 123&nbsp;456&nbsp;78&nbsp;&nbsp;&nbsp; &#128339&nbsp;Mon-Sat 11:00AM to 23PM
-            <span>Eng/Kan/Hindi</span>
+            + 123&nbsp;456&nbsp;78&nbsp;&nbsp;&nbsp; &#128339&nbsp;Mon-Sat 11:00AM to 23PM  
         </div>
+        <br><br>
+        <section class="container">
+            <h1 style="font-size: 50px;">RESTAURANT</h1>
+            <nav style="font-size: 30px;">
+                <a href="#about">About</a>&nbsp;
+                <a href="#menu">Menu</a>&nbsp;
+                <a href="#specials">Specials</a>&nbsp;
+                <a href="#contact us">Contact Us</a>&nbsp;
+                <button class="button1"><a href="#submit">Reserve a table</a></button>
+            </nav>
+        </section>
         </div>
     </header>
+    <section>
+        <div style="margin-top: 80px; color: white">
+            <div style="font-size: 70px;">Welcome to the Restaurant </div>
+            <div style="font-size: 30px;">&nbsp;&nbsp;Delivering the great food for more than 10 years </div>
+        </div>
+        <br>
+        <br>
+        <button class="button1"><a href="#submit">Our Menu</a></button>
+        <button class="button1"><a href="#submit">Book a Table</a></button>   
+    </section>
 </body>
 </html>
